@@ -1,6 +1,6 @@
 # Churn Prediction Project
 
-## 📌 Project Overview
+##  Project Overview
 This project tackles a **customer churn prediction** problem in the context of a **music streaming service**.  
 The objective is to predict which users will cancel their subscription within a **10-day window**, using historical user interaction data.
 
@@ -8,7 +8,7 @@ The project was developed as part of a **machine learning competition**, with **
 
 ---
 
-## 🧠 Key Challenges
+##  Key Challenges
 - **Extreme class imbalance** (~3% churners in training data)
 - **Artificially balanced test set** (~50% churners)
 - **Risk of data leakage** from cancellation-related events
@@ -16,7 +16,7 @@ The project was developed as part of a **machine learning competition**, with **
 
 ---
 
-## 🔍 Methodology
+##  Methodology
 
 ### 1. Problem Reformulation
 Instead of predicting calibrated churn probabilities, the task is treated as a **ranking problem**:
@@ -80,7 +80,7 @@ This approach is:
 
 ---
 
-## 📊 Results
+##  Results
 - **Cross-validation AUC:** ~0.75 – 0.77  
 - **Best private leaderboard AUC:** **0.65198**
 - **Final submission AUC:** **0.64308**
@@ -91,14 +91,14 @@ Despite the extreme imbalance, the model achieves:
 
 ---
 
-## ❌ What Didn’t Work
+##  What Didn’t Work
 - SMOTE oversampling (blurred decision boundaries)
 - Pseudo-labeling (introduced bias)
 - Aggressive feature dropping based solely on correlation
 
 ---
 
-## 🏁 Conclusion
+##  Conclusion
 This project highlights that **problem formulation and feature engineering matter more than model complexity**.
 
 Key takeaways:
@@ -113,7 +113,7 @@ Future extensions could include:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - Python
 - Jupyter Notebook
 - LightGBM, CatBoost, XGBoost
@@ -123,7 +123,7 @@ Future extensions could include:
 
 ---
 
-## 👤 Author
+##  Author
 **Ethan Ben Hamou**
 
 If you have questions or would like to discuss the methodology, feel free to reach out.
